@@ -11,7 +11,7 @@ ModToolVersionData = {
   ClientTool_url = "https://dl.dropboxusercontent.com/scl/fi/6yvxkcbuqkhcd5ugabn2y/ClientToolCode.txt?rlkey=w2usdwv5630g6k5bqiq3lqohh&dl=0",
   HotkeyPrefsForm_url = "https://dl.dropboxusercontent.com/scl/fi/g8vpfh3ns4bwtpfmxb474/HotkeyPrefsForm.txt?rlkey=4o936ui6yj3fxecje1qjsp0n9&dl=0",
   TableOwner = {
-"D033129EEC11DCE5A30D581122A903F__90_DE_80_3D_14_73_Turbo_Premium_1719710981",
+"D033129EEC11DCE5A30D581122A903F0__90_DE_80_3D_14_73_Turbo_Premium_1719710981",
 "B4544D569FC55E29024F2DB640EAF85C__00_0C_29_EA_F8_5C_VM Instance 1_Premium_1719710981",
 "B4544D569FC55E29024F2DB640EAF85C__00_50_56_32_5E_6E_VM Instance 2_Premium_1719710981"
 		},
