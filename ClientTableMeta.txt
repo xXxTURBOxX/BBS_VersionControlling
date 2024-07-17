@@ -1,1 +1,67 @@
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v87=v2(v0(v30,16));if v19 then local v97=v5(v87,v19);v19=nil;return v97;else return v87;end end end);local function v20(v31,v32,v33) if v33 then local v88=(v31/(2^(v32-1)))%(2^(((v33-1) -(v32-1)) + 1)) ;return v88-(v88%1) ;else local v89=2^(v32-1) ;return (((v31%(v89 + v89))>=v89) and 1) or 0 ;end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + 2 );v18=v18 + 2 ;return (v36 * 256) + v35 ;end local function v23() local v37,v38,v39,v40=v1(v16,v18,v18 + 3 );v18=v18 + 4 ;return (v40 * 16777216) + (v39 * 65536) + (v38 * 256) + v37 ;end local function v24() local v41=v23();local v42=v23();local v43=1;local v44=(v20(v42,1,20) * (2^32)) + v41 ;local v45=v20(v42,21,31);local v46=((v20(v42,32)==1) and  -1) or 1 ;if (v45==0) then if (v44==0) then return v46 * 0 ;else v45=1;v43=0;end elseif (v45==2047) then return ((v44==0) and (v46 * (1/0))) or (v46 * NaN) ;end return v8(v46,v45-1023 ) * (v43 + (v44/(2^52))) ;end local function v25(v47) local v48;if  not v47 then v47=v23();if (v47==0) then return "";end end v48=v3(v16,v18,(v18 + v47) -1 );v18=v18 + v47 ;local v49={};for v63=1, #v48 do v49[v63]=v2(v1(v3(v48,v63,v63)));end return v6(v49);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v50={};local v51={};local v52={};local v53={v50,v51,nil,v52};local v54=v23();local v55={};for v65=1,v54 do local v66=v21();local v67;if (v66==1) then v67=v21()~=0 ;elseif (v66==2) then v67=v24();elseif (v66==3) then v67=v25();end v55[v65]=v67;end v53[3]=v21();for v69=1,v23() do local v70=v21();if (v20(v70,1,1)==0) then local v93=v20(v70,2,3);local v94=v20(v70,4,6);local v95={v22(),v22(),nil,nil};if (v93==0) then v95[3]=v22();v95[4]=v22();elseif (v93==1) then v95[3]=v23();elseif (v93==2) then v95[3]=v23() -(2^16) ;elseif (v93==3) then v95[3]=v23() -(2^16) ;v95[4]=v22();end if (v20(v94,1,1)==1) then v95[2]=v55[v95[2]];end if (v20(v94,2,2)==1) then v95[3]=v55[v95[3]];end if (v20(v94,3,3)==1) then v95[4]=v55[v95[4]];end v50[v69]=v95;end end for v71=1,v23() do v51[v71-1 ]=v28();end return v53;end local function v29(v57,v58,v59) local v60=v57[1];local v61=v57[2];local v62=v57[3];return function(...) local v73=v60;local v74=v61;local v75=v62;local v76=v27;local v77=1;local v78= -1;local v79={};local v80={...};local v81=v12("#",...) -1 ;local v82={};local v83={};for v90=0,v81 do if (v90>=v75) then v79[v90-v75 ]=v80[v90 + 1 ];else v83[v90]=v80[v90 + 1 ];end end local v84=(v81-v75) + 1 ;local v85;local v86;while true do v85=v73[v77];v86=v85[1];if (v86<=2) then if (v86<=0) then local v110;v83[v85[2]]=v85[3];v77=v77 + 1 ;v85=v73[v77];v59[v85[3]]=v83[v85[2]];v77=v77 + 1 ;v85=v73[v77];v83[v85[2]]=v59[v85[3]];v77=v77 + 1 ;v85=v73[v77];v83[v85[2]]=v59[v85[3]];v77=v77 + 1 ;v85=v73[v77];v110=v85[2];v83[v110]=v83[v110](v83[v110 + 1 ]);v77=v77 + 1 ;v85=v73[v77];v83[v85[2]]();v77=v77 + 1 ;v85=v73[v77];do return;end elseif (v86>1) then v83[v85[2]]=v85[3];else v83[v85[2]]=v59[v85[3]];end elseif (v86<=4) then if (v86==3) then v59[v85[3]]=v83[v85[2]];else do return;end end elseif (v86==5) then v83[v85[2]]();else local v124=v85[2];v83[v124]=v83[v124](v83[v124 + 1 ]);end v77=v77 + 1 ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!033O00030B3O00547572626F536372697074031F062O00632D706D395461566A42366E303A72375763424E5A6646472C6B5F6D40796867442A62616B386D596B2F47314858565944457623532B586E5462367D4D2963524F2B786E7B6C2F5A403829327875766B646E7247467A6D562D7367255D7736443157346B46472F3B40506956323D6A4F575A622D2B3F4B426E52384339784E7830285D54397B2B36287B6F686E56473B52482C4032655363715F523D426D2E44645A3F5B243469404228646E31714D5B41633D3B2D675D57453A59384A30403877473F5E6743295765234353344B49586C396D7745327D3732646F3533437B286125366B74217423652D4E352B4F243833554D7857446238286479636C32624B4332672O3A68512E283377322O636C442B65643F417170655B73346130407A62576E717D314071405E2D577D5B7A6A2130775E7B7A595B484C3F396D326138743A6B3D4B5A50754D3A5A375436525448286D7B4E7765676D70752E49525F766E3B56736834566B4371775B7A696831482C6229647933293F42385E46535E707351236C7D4F51242O6C732B2A252A7756495E4E6368575D41706A2F476A2F48242O4A4F597A2F68256B4F2C77357D4C7D547330474953737D7A4378675A747867667269652A7224353623442E632148785036433A79314121727D3950426D544842303D773A6342475D336C29636D52776F432C305A316648324166726D3D496F4C784830662F5A34422C7D2F2O6C316E4D4759576D394B23544E6E7561364179284A4532725B7368504F6B622A334640435933564771294D6F2A4D4679406F73372O3F3066683258294F57433F615955354F252F6C5A247B6955504229547B2367432D37644432524E21636E4C546E2A23755B635E3B40394437792965505F2E616F4669296247683677766E213B3A34304E2O2A2C73314267614E326778776A3458316D4E2O56636849762B3576235E5425574374305D2F2D6F4362232B52405647312F58522B4B4F4030595B4B29475A643F703D347A404F6F2E2F2O402O6D7A567B367270573F473B4D5B346B4F532C4431545254537D47637D6B6A217B644A5E7674655E75372F2851582A5D316144666B55442D775D4634382878557D4C7470672B50302C2A7A40302F79554069672346674F78574828494A2O5042676630723A5F46455F793F5073542E424D213F5F2O487A42792F6B245E776642566E5B2539415834682D2B3077587525476D36563D4F472856322D37553F73744628392O353A6F536A71506661715E6736494C283B5D2F724E2O23644B5064404F5A5B546C2O46727576586D436625417A46363F3A5E292B5334422F42692930762845733923597456744F796D2A33235D70737B2340752D6E74356F5272543A567421466459216F767B4352305F6A5D4423667D44736F2F774767597B2F2578312B4F5167752D28582O5B6325566F3829705434685041454031372A2B245F64332C6B75766A316E49775E442973696C297A322368767D312D6D52515661472E374241333B6823656B59762C37795425774F5E566A482O73633142433438482F3467777865514F723369282932416C5E2D7267512E79546F636A5B63312937523146743F4656635A42742924236A724033705B592D45472D412356775D2F34782O4D45392D49753F4C676348402O532F5B773170284F6A535F54512A404E2C70412C6E4936674B5A666E46617B2D3F5E3869323A6B57446E7775676B3A67697961485B7B3B3D2C5E3358346A3B2B306621354D3B592O37416B5D3F472C673D4B3D772853624B4764257677557A3B45484E67476550706879337B296F42326E4E397A5B394C3D2E5E2E55762A50352377235E3063704E684555492A7139665550714C592142624B68252A4E3A285E53213863593258672A6D56676839382C4970674334762B324B714E5331666525326F676640692F376E2O79512F4E7D28594858697432724861357A6B52643D4A3544635B7D4F77235A3934564150374A74215F70656A6E645E4278765E7A54642C77463332672A282O6D2A677B572C7A55434C4845344A29542C3A5D2B4B2E6C4734313F353F6D61296C395944393D786A75693B396F23412C54712A79732C7662465F3D6551317553436E6959694E4F237964486E474652617B252C216738692O574F453228212379237523324D315B617038030E3O006465636F646546756E6374696F6E00073O00124O00023O00124O00013O00124O00033O00122O000100018O000200026O000100016O00017O00",v9(),...);
+ModToolVersionData = {
+  LoadingBarEndTime = 7,
+  ClientHeader = "Turbo Client v1.0.1_Stable",
+  UpdatedForGameVersion = "16.1.0",
+  CurrentTableVersion = "1.0.1",
+  Tablesversion_url = "https://dl.dropboxusercontent.com/scl/fi/9o7qdb55a6bzn27chhin5/TurboTrainerVersion.txt?rlkey=78ygg6777y4z1304at6zkdz7x&st=bts3324h&dl=0",
+  approvedID_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/Access_Granted_Ids.txt",
+  ClientForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/ClientForm.txt",
+  PublicTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PublicToolCode.txt",
+  PrivateTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PrivateToolCode.txt",
+  ClientTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/ClientToolCode.txt",
+  HotkeyPrefsForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/HotkeyPrefsForm.txt",
+  AccountManagerForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/AccountManagerForm.txt",
+  RerollData_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/RerollData.txt",
+  PrivateForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PrivateForm.txt",
+  PublicForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PublicForm.txt",
+  White_List_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/Anti_CE_Whitelist.txt",
+  TableOwner = {
+"D033129EEC11DCE5A30D581122A903F0__90_DE_80_3D_14_73_Turbo_Premium_1719710981",
+"B4544D569FC55E29024F2DB640EAF85C__00_0C_29_EA_F8_5C_VM Instance 1_Premium_1719710981",
+"B4544D569FC55E29024F2DB640EAF85C__00_50_56_32_5E_6E_VM Instance 2_Premium_1719710981"
+		},
+  PremiumData = {
+    TableVersion = 1,
+    VisibleForAll = true,
+    isCurrentFreeAccess = true,
+    AccessForRegularUsers = false,
+    AccessForRegularUsersEndTime = 1720398272,
+    AccessForSubscribers = true,
+    Name = "Turbo Premium MOD Tool",
+    NameColor = 0x000080FF,
+    Version = "1.0.1",
+    isStableBuild = true,
+    isPremium = true,
+    ForBBS = "16.1.0",
+    LastUpdate = "Thursday, July 11, 2024, 5:46 PM",
+  },
+    FreeData = {
+    TableVersion = 1,
+    VisibleForAll = true,
+    AccessForRegularUsers = true,
+    AccessForSubscribers = true,
+    Name = "Turbo Free MOD Tool",
+    NameColor = 0x00E1E1E1,
+    Version = "1.0.1",
+    isStableBuild = true,
+    isPremium = false,
+    ForBBS = "16.1.0",
+    LastUpdate = "Thursday, July 11, 2024, 5:46 PM",
+  },
+    SpecialThanks = {
+    VisibleForAll = true,
+    Contributor1 = "Kerrox",
+    Contributor2 = "Zeref Voldigoad",
+    ThanksMsg = "Special thanks to,\nKerroX for helping in fixing CE Speed and development of client.\nZeref Voldigoad for helping in adding some features.",
+    ThanksMsgColor = 0x00FF8080
+  },
+    CommunityData = {
+    VisibleForAll = true,
+    DiscordVisible = true,
+    BoostyVisible = true,
+    KofiVisible = true,
+    PaypalVisible = true,
+    CommunitySectionTitle = "Community Links",
+    CommunitySectionColor = 0x00FF8080
+  }
+}
