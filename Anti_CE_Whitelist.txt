@@ -58,6 +58,7 @@ whitelisted_processes_table = {
 "lenovo.modern.imcontroller.pluginhost.device.exe",
 "wemodauxiliaryservice.exe",
 "voicemoddesktop.exe",
+"voicemod.exe",
 "fnativewebengineexe.exe",
 "qtwebengineprocess.exe",
 "runsw.exe",
