@@ -54,6 +54,8 @@ whitelisted_processes_table = {
 "omron.cxmw.modules.ppp.pppservice.exe",
 "omron.cxmw.modules.autoip.autoipservice.exe",
 "wemod.exe",
+"mcupdatermodule.exe",
+"wemod.overlay.exe",
 "rt-mod-x86_64-sse4-avx2.exe",
 "lenovo.modern.imcontroller.exe",
 "automodedetect.exe",
