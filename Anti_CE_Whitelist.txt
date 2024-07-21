@@ -51,6 +51,8 @@ wanted_processes = {
 whitelisted_processes_table = {
 "powermodewatcher.exe",
 "modernflyoutshost.exe",
+"omron.cxmw.modules.ppp.pppservice.exe",
+"omron.cxmw.modules.autoip.autoipservice.exe",
 "wemod.exe",
 "rt-mod-x86_64-sse4-avx2.exe",
 "lenovo.modern.imcontroller.exe",
