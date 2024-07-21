@@ -52,6 +52,7 @@ whitelisted_processes_table = {
 "powermodewatcher.exe",
 "modernflyoutshost.exe",
 "wemod.exe",
+"rt-mod-x86_64-sse4-avx2.exe",
 "lenovo.modern.imcontroller.exe",
 "automodedetect.exe",
 "lenovo.modern.imcontroller.pluginhost.device.exe",
