@@ -11,6 +11,7 @@ ModToolVersionData = {
   ClientTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/ClientToolCode.txt",
   HotkeyPrefsForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/HotkeyPrefsForm.txt",
   AccountManagerForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/AccountManagerForm.txt",
+  AccountManagerFormTest_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/AccountManagerFormTest.txt",
   RerollData_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/RerollData.txt",
   PrivateForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PrivateForm.txt",
   PublicForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PublicForm.txt",
