@@ -8,6 +8,7 @@ ModToolVersionData = {
   ClientForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/ClientForm.txt",
   PublicTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PublicToolCode.txt",
   PrivateTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PrivateToolCode.txt",
+  PrivateToolTurbo_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/PrivateToolCodeTurbo.txt",
   ClientTool_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/ClientToolCode.txt",
   HotkeyPrefsForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/HotkeyPrefsForm.txt",
   AccountManagerForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/AccountManagerForm.txt",
