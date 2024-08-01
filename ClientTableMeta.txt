@@ -1,7 +1,7 @@
 ModToolVersionData = {
   LoadingBarEndTime = 7,
-  ClientHeader = "Turbo Client v1.0.1_Stable",
-  UpdatedForGameVersion = "16.1.0",
+  ClientHeader = "Turbo Client v1.0.2_Stable",
+  UpdatedForGameVersion = "16.1.10",
   CurrentTableVersion = "1.0.1",
   Tablesversion_url = "https://dl.dropboxusercontent.com/scl/fi/9o7qdb55a6bzn27chhin5/TurboTrainerVersion.txt?rlkey=78ygg6777y4z1304at6zkdz7x&st=bts3324h&dl=0",
   approvedID_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/Access_Granted_Ids.txt",
