@@ -22,7 +22,7 @@ ModToolVersionData = {
   SaveAccountForm_url = "https://raw.githubusercontent.com/xXxTURBOxX/BBS_VersionControlling/main/SaveAccountForm.txt",
   TableOwner = {
 "987F73E7AEC74FA2B04D033129E_Turbo_Premium_1719710981",
-"4AFF3FC3CF0E4E61BDAB4544D56_Turbo VM_Premium_1719710981",
+"4AFF3FC3CF0E4E61BDAB4544D56_Turbo VM_Premium_1719710981"
 		},
   PremiumData = {
     TableVersion = 1,
