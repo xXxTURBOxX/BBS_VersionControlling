@@ -45,6 +45,8 @@ wanted_processes = {
 "rt-mod-x86_64.exe",
 "rt-mod-x86.exe",
 "runtime mod",
+"kerrox",
+"kmt",
 "runtime modifier"}
 --------------------------------------------------------------------------
 whitelisted_processes_table = {
